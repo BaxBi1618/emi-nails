@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    background-image: url(images/salon.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+body{
+    display: flex;
+}
+
+nav{
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 15%;
+    background-color: #504746;
+    color: wheat;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav img{
+    width: 50%;
+    margin: auto;
+}
+
+main{
+    height: 100%;
+    width: 75%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    align-items: start;
+    margin: auto;
+}
+
+header{
+    font-size: 30px;
+    height: 120px;
+    background-color: #B6244F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0 40px 0;
+}
+
+section{
+    background-color: #FBB7C0;
+    margin: 20px 0 40px 0;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    scroll-margin-top: 50px;
+}
+
+section h2{
+    background-color: #B6244F;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+section img{
+    width: 200px;
+    float: left;
+    margin-right:10px ;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section article{
+    font-size: 22px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #B6244F;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px; 
+}
+
+td:nth-child(2n + 1){
+    width: 70%;
+}
+
+td{
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tr:hover td {
+    background-color: #f1f1ff;
+}
+
+/*lista*/
+
+ul{
+    list-style-type: none;
+    font-size: 25px;
+    line-height: 1.8;
+    margin: auto;
+    width: 80%;
+}
+
+/*link*/
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FBB7C0;
+}
