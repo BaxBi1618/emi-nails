@@ -53,15 +53,15 @@ main {
   align-items: start;
 }
 /*header style*/
-header{
-    height: 120px;
-    color: white;
-    margin: 20px 0 40px 0;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 30px;
+header {
+  height: 120px;
+  color: white;
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
 }
-header div{
+header div {
   background-color: #b6244f;
   text-align: center;
   padding: 20px;
@@ -87,7 +87,7 @@ section h2 {
   margin-bottom: 30px;
 }
 
-#oMnie img{
+#oMnie img {
   width: 200px;
   float: left;
   margin-right: 10px;
@@ -100,34 +100,35 @@ section article {
   font-size: 22px;
 }
 
-#kontakt{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 20px;
-    min-width: 270px;
+#kontakt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  min-width: 270px;
 }
 
-#kontakt img{
-    width: 64px;
+#kontakt img {
+  width: 64px;
 }
 
-.square{
-    background-color: white;
-    width: 40%;
-    padding: 30px 0 30px 0;
-    text-align: center;
-    border-radius: 20px;
-    border:#504746 solid 2px;
-    min-width: 190px;
+.square {
+  background-color: white;
+  width: 40%;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  border-radius: 20px;
+  border: #504746 solid 2px;
+  min-width: 190px;
 }
 
-#cennik, #kontakt{
-    width: 46%;
+#cennik,
+#kontakt {
+  width: 46%;
 }
 
-#cennik{
-    min-width: 270px;
+#cennik {
+  min-width: 270px;
 }
 /*table style*/
 
