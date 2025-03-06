@@ -9,12 +9,9 @@ window.addEventListener("load", function clock() {
   console.log("work");
   let clockH1 = document.getElementById("zegar");
   let time = new Date();
-  let hours = time.getHours();
-  let minutes = time.getMinutes();
-  let seconds = time.getSeconds();
-  hours = checkTime(hours);
-  minutes = checkTime(minutes);
-  seconds = checkTime(seconds);
+  let hours = checkTime(time.getHours());
+  let minutes = checkTime(time.getMinutes());
+  let seconds = checkTime(time.getSeconds());
   clockH1.innerText = hours + ":" + minutes + ":" + seconds;
   setTimeout(clock, 1000);
 });
