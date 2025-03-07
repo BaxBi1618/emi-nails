@@ -1,11 +1,14 @@
 header {
-  height: 120px;
+  min-height: 120px;
   color: white;
   margin: 20px 0 40px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-size: 30px;
   width: 100%;
+  column-gap: 20px ;
+  row-gap: 20px;
 }
 header div {
   background-color: #b6244f;
@@ -13,4 +16,5 @@ header div {
   padding: 20px;
   border-radius: 20px;
   width: 40%;
+  min-width: 305px;
 }

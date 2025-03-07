@@ -9,4 +9,5 @@ main {
   margin-top: 0;
   margin-bottom: 0;
   align-items: start;
+  column-gap: 20px;
 }

@@ -31,40 +31,6 @@ section h2 {
   object-fit: cover;
 }
 
-section article {
-  font-size: 22px;
-}
-
-#kontakt {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 20px;
-  min-width: 270px;
-}
-
-#kontakt img {
-  width: 64px;
-}
-
-.square {
-  background-color: white;
-  width: 40%;
-  padding: 30px 0 30px 0;
-  text-align: center;
-  border-radius: 20px;
-  border: #504746 solid 2px;
-  min-width: 190px;
-}
-
-#cennik,
-#kontakt {
-  width: 46%;
-}
-
-#cennik {
-  min-width: 270px;
-}
 
 #galeria{
     display: flex;
@@ -80,32 +46,4 @@ section article {
 }
 /*table style*/
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
 
-th {
-  background-color: #b6244f;
-  color: white;
-  padding: 12px 15px;
-  text-align: left;
-  font-size: 16px;
-}
-
-td:nth-child(2n + 1) {
-  width: 70%;
-}
-
-td {
-  background-color: #f9f9f9;
-  padding: 10px 15px;
-  text-align: center;
-  border: 1px solid #ddd;
-  font-size: 14px;
-}
-
-tr:hover td {
-  background-color: #f1f1ff;
-}
