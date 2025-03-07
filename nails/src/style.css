@@ -1,75 +1,8 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-html {
-  background-image: url(images/salon.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  scroll-behavior: smooth;
-}
-body {
-  display: flex;
-}
-
-/* navigation section */
-
-nav {
-  height: 100vh;
-  position: sticky;
-  left: 0;
-  top: 0;
-  width: 150px;
-  min-width: 100px;
-  background-color: #504746;
-  color: wheat;
-  text-align: center;
-  padding-top: 20px;
-}
-
-nav img {
-  width: 128px;
-  filter: invert(100%);
-  margin: auto;
-  opacity: 90%;
-}
-
 /*main section elements*/
 
-main {
-  height: 100%;
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
-  margin: auto;
-  align-items: start;
-}
 /*header style*/
-header {
-  height: 120px;
-  color: white;
-  margin: 20px 0 40px 0;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 30px;
-}
-header div {
-  background-color: #b6244f;
-  text-align: center;
-  padding: 20px;
-  border-radius: 20px;
-  width: 40%;
-}
+
+
 /*sections style*/
 section {
   background-color: rgba(255, 183, 197, 0.85);
@@ -175,25 +108,4 @@ td {
 
 tr:hover td {
   background-color: #f1f1ff;
-}
-
-/*list style*/
-
-ul {
-  list-style-type: none;
-  font-size: 20px;
-  line-height: 1.8;
-  margin: auto;
-  width: 80%;
-}
-
-/*link style*/
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fbb7c0;
 }

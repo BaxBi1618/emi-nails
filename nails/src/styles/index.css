@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  background-image: url(../../public/images/salon.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body {
+  width: 100%;
+}
+#root {
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+}

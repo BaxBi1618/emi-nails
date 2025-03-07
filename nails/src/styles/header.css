@@ -1,0 +1,16 @@
+header {
+  height: 120px;
+  color: white;
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  width: 100%;
+}
+header div {
+  background-color: #b6244f;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  width: 40%;
+}
