@@ -7,8 +7,7 @@ function Header() {
       <div>
         <h1>Emi Nails</h1>
       </div>
-      <div>
-        <h1 id="zegar"></h1>
+      <div id="zegar">
       </div>
     </header>
   );
