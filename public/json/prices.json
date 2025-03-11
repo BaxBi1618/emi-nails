@@ -1,0 +1,36 @@
+{
+  "cennik": {
+    "case1": {
+      "title": "💅 Cennik Manicure",
+      "services": [
+        { "name": "Manicure klasyczny", "price": "50 zł" },
+        { "name": "Manicure japoński", "price": "60 zł" },
+        { "name": "Manicure hybrydowy", "price": "80 zł" },
+        { "name": "Manicure żelowy na naturalnej płytce", "price": "100 zł" },
+        { "name": "Przedłużanie paznokci żelem", "price": "130 zł" },
+        { "name": "Uzupełnienie żelu", "price": "90 zł" }
+      ]
+    },
+    "case2": {
+      "title": "🦶 Cennik Pedicure",
+      "services": [
+        { "name": "Pedicure klasyczny", "price": "80 zł" },
+        { "name": "Pedicure hybrydowy", "price": "100 zł" },
+        { "name": "Pedicure leczniczy", "price": "120 zł" },
+        { "name": "Pedicure SPA (peeling, maska, masaż)", "price": "140 zł" }
+      ]
+    },
+    "case3": {
+      "title": "✨ Dodatkowe Usługi",
+      "services": [
+        {
+          "name": "Usunięcie hybrydy/żelu bez nowej stylizacji",
+          "price": "30 zł"
+        },
+        { "name": "Naprawa 1 paznokcia", "price": "10-15 zł" },
+        { "name": "Olejowanie i regeneracja paznokci", "price": "40 zł" },
+        { "name": "Parafina na dłonie/stopy", "price": "50 zł" }
+      ]
+    }
+  }
+}
