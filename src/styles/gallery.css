@@ -7,10 +7,12 @@
   margin: 20px 0 40px 0;
   border-radius: 20px;
   padding: 20px;
-  width: 90%;
+  width: 600px;
   scroll-margin-top: 50px;
 }
-
+.splide:not(.is-overflow) .splide__list {
+  justify-content: center;
+}
 #galeria h2 {
   background-color: #b6244f;
   color: white;
