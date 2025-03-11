@@ -2,11 +2,29 @@ import "../styles/priceList.css";
 import { useEffect, useState } from "react";
 
 function PriceList() {
+    const [cennikData, setCennikData] = useState(null);
+  
+    useEffect(() => {
+      fetch("json/prices.json")
+        .then((response) => response.json())
+        .then((data) => setCennikData(data.cennik))
+        .catch((error) => console.error("Błąd ładowania danych:", error));
+    }, []);
+  
+    if (!cennikData) {
+      return(
+        <section id="cennik">
+          <h2>Cennik</h2>
+          <h3>Ładowanie danych...</h3>
+        </section>
+      ) 
+    }
+
   return (
     <section id="cennik">
       <h2>Cennik</h2>
-      {Object.keys(cennik.cennik).map((key) => {
-        const category = cennik.cennik[key];
+      {Object.keys(cennikData).map((key) => {
+        const category = cennikData[key];
         return (
           <table key={key}>
             <thead>

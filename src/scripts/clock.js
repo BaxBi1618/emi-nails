@@ -6,7 +6,6 @@ function checkTime(i) {
 }
 
 window.addEventListener("load", function clock() {
-  console.log("work");
   let clockH1 = document.getElementById("zegar");
   let time = new Date();
   let hours = checkTime(time.getHours());

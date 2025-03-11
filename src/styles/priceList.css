@@ -47,3 +47,7 @@ td {
 tr:hover td {
   background-color: #f1f1ff;
 }
+
+h3{
+  text-align: center;
+}
