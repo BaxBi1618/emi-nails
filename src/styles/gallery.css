@@ -7,12 +7,10 @@
   margin: 20px 0 40px 0;
   border-radius: 20px;
   padding: 20px;
-  width: 600px;
+  width: 800px;
   scroll-margin-top: 50px;
 }
-.splide:not(.is-overflow) .splide__list {
-  justify-content: center;
-}
+
 #galeria h2 {
   background-color: #b6244f;
   color: white;
@@ -24,7 +22,23 @@
 }
 
 #galeria img {
-  object-fit: none;
   width: 400px;
   height: 400px;
+  object-fit: cover;
+  padding:0 20px 0 20px;
+}
+.slick-slider{
+  width: 90%;
+}
+
+.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 30px;
 }

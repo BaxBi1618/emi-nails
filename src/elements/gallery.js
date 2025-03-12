@@ -1,36 +1,25 @@
 import "../styles/gallery.css";
-import { Splide, SplideSlide } from '@splidejs/react-splide';// Importujemy Splide i SplideSlide
-import "@splidejs/splide/dist/css/splide.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 function Gallery() {
+  var settings = {
+    dots: false,
+    speed: 500,
+    slidesToShow:1,
+    slidesToScroll: 1,
+    infinite: true,
+    centerMode: true,
+  };
   return (
     <section id="galeria">
       <h2>Galeria</h2>
-        <Splide 
-          options={{ 
-            type: "loop",
-            rewind:true,
-            perPage: 1,
-            focus  : 'center',
-            width: "100%",  
-            gap:"150px"}}>
-
-          <SplideSlide>
-        <img src="/images/galeria1.jpg" alt="zdjecie salonu" />
-        </SplideSlide>
-        <SplideSlide>
-        <img src="/images/galeria2.jpg" alt="zdjecie salonu" />
-        </SplideSlide>
-        <SplideSlide>
-        <img src="/images/galeria3.jpg" alt="zdjecie salonu" />
-        </SplideSlide>
-        <SplideSlide>
-        <img src="/images/galeria4.jpg" alt="zdjecie salonu" />
-        </SplideSlide>
-        <SplideSlide>
-        <img src="/images/galeria2.jpg" alt="zdjecie salonu" />
-        </SplideSlide>
-        </Splide>
+        <Slider {...settings}>
+          <img src="/images/galeria1.jpg" alt="zdjecie salonu" />
+          <img src="/images/galeria2.jpg" alt="zdjecie salonu" />
+          <img src="/images/galeria3.jpg" alt="zdjecie salonu" />
+        </Slider>
     </section>
   );
 }
