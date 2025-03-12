@@ -20,9 +20,6 @@
   padding: 10px;
   margin-bottom: 30px;
   width: 100%;
-  user-select: none;      
-  pointer-events: none;   
-  -webkit-user-drag: none;
 }
 
 .swiper {
@@ -54,12 +51,5 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  user-select: none;    
-  pointer-events: none; 
-  -webkit-user-drag: none;
-}
 
-.swiper-pagination{
-  background-color: rgba(255, 183, 197);
-  width: 20%;
 }
