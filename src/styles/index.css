@@ -23,3 +23,15 @@ body {
   display: flex;
   align-items: flex-start;
 }
+
+img{
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+h2{
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
