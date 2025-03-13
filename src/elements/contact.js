@@ -1,28 +1,42 @@
 import "../styles/contact.css";
+import { useEffect, useState } from "react";
 
 function Contact() {
+  const [infoData, setInfoData] = useState(null);
+
+  useEffect(() => {
+    fetch("json/contact.json")
+      .then((response) => response.json())
+      .then((data) => setInfoData(data.info))
+      .catch((error) => console.error("Błąd ładowania danych:", error));
+  })
+
+  if(!infoData){
+    return(
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <article class="square">
+          <h3>Dane kontaktowe aktualnie niedostępe</h3>
+        </article>
+      </section>
+    )
+  }
+
   return (
     <section id="kontakt">
       <h2>Kontakt</h2>
 
-      <article class="square">
-        <img src="images/lokalizacja.png" alt="Pinezka" />
-        <h3>adres</h3>
-        <p>Sezamkowa 13</p>
-        <p>Łódź 76-932</p>
-      </article>
-      <article class="square">
-        <img src="images/kontakt.png" alt="Telefon" />
-        <h3>Kontakt</h3>
-        <p>tel. 123 123 123</p>
-        <p>emi-nails.gmail.com</p>
-      </article>
-      <article class="square">
-        <img src="images/otwarcie.png" alt="Zegar" />
-        <h3>Godziny otwarcia</h3>
-        <p>Pon-Pt 9.00 - 20.00</p>
-        <p>sobota 11.00 - 16.00</p>
-      </article>
+      {Object.keys(infoData).map((key)=> {
+        const category = infoData[key];
+        return(
+          <article class="square" key={key}>
+            <img src={`/images/${category.title}`} alt="Pinezka" />
+            {category.paragraphs.map((paragraph)=> (
+              <p>{paragraph.name}</p>
+            ))}
+          </article>
+        )
+      })}
     </section>
   );
 }

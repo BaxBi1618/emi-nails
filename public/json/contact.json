@@ -1,0 +1,28 @@
+{
+    "info":{
+        "addres":{
+            "picture":"lokalizacja.png",
+            "header":"Adres",
+            "paragraphs" : [
+                {"name":"Sezamkowa 13"},
+                {"name":"Łódź 76-932"}
+            ]
+        },
+        "contact":{
+            "picture":"kontakt.png",
+            "paragraphs" : [
+                {"name":"Kontakt"},
+                {"name":"Tel. 123 123 123"},
+                {"name":"emi-nails@gmail.com"}
+            ]
+        },
+        "openingHours":{
+            "picture":"otwarcie.png",
+            "paragraphs" : [
+                {"name":"Godziny otwarcia"},
+                {"name":"Pon-Pt 9.00 - 20.00"},
+                {"name":"Sobotwa 11.00 - 16.00"}
+            ]
+        }
+    }
+}
